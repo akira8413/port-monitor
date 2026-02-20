@@ -7,19 +7,23 @@ See which processes are using your development ports at a glance, and kill them 
 ## Quick Start
 
 ```bash
-npx port-monitor-gui
+git clone https://github.com/akira8413/port-monitor.git
+cd port-monitor
+node bin/cli.js --open
 ```
 
-Open http://localhost:9999 in your browser.
+Dashboard opens at http://localhost:9999.
 
 ## Features
 
 - Real-time port monitoring with auto-refresh
-- Process name, PID, git branch, and working directory detection
+- **All Ports** mode: auto-discover every listening port on the system
+- Dev / System categorization with filter toggle
+- Click to name any port (e.g., "frontend", "api")
 - One-click process kill
-- Add/remove ports from the dashboard
+- Process name, PID, git branch, and working directory detection
 - Dynamic favicon (green/amber/red) shows port health at a glance
-- Tab title shows active port count: `(3/6) Port Monitor`
+- Tab title shows active count: `(3/6) Port Monitor`
 - `--open` to auto-launch browser on start
 - Cross-platform (macOS, Linux, Windows)
 - Zero dependencies
@@ -28,19 +32,22 @@ Open http://localhost:9999 in your browser.
 
 ```bash
 # Monitor default ports (3000, 4000, 5000, 5173, 8000, 8080)
-npx port-monitor-gui
+node bin/cli.js
 
 # Monitor specific ports
-npx port-monitor-gui 3000 8000
+node bin/cli.js 3000 8000
 
 # Custom dashboard port
-npx port-monitor-gui --port 8888
+node bin/cli.js --port 8888
 
 # Watch specific ports (comma-separated)
-npx port-monitor-gui --watch 3000,8000,5432
+node bin/cli.js --watch 3000,8000,5432
 
 # Custom refresh interval (ms)
-npx port-monitor-gui --refresh 1000
+node bin/cli.js --refresh 1000
+
+# Open browser automatically
+node bin/cli.js --open
 ```
 
 ## CLI Options
