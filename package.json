@@ -1,0 +1,28 @@
+{
+  "name": "port-monitor-gui",
+  "version": "1.0.0",
+  "description": "Lightweight port monitor with web dashboard. Zero dependencies.",
+  "bin": {
+    "port-monitor": "./bin/cli.js"
+  },
+  "main": "./lib/server.js",
+  "files": [
+    "bin/",
+    "lib/"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "keywords": [
+    "port",
+    "monitor",
+    "dashboard",
+    "development",
+    "server",
+    "process"
+  ],
+  "license": "MIT"
+}
