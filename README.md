@@ -63,6 +63,7 @@ Place a `.portmonitor` file (JSON) in your project root:
 ```json
 {
   "ports": [3000, 8000, 5432],
+  "names": { "3000": "frontend", "8000": "api", "5432": "postgres" },
   "port": 9999,
   "refresh": 3000
 }
