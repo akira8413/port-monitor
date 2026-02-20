@@ -19,6 +19,7 @@ if (args.help) {
     -p, --port      Dashboard port (default: 9999)
     -w, --watch     Ports to monitor (comma-separated)
     -r, --refresh   Refresh interval in ms (default: 3000)
+    -o, --open      Open dashboard in browser on start
     -h, --help      Show this help
     -v, --version   Show version
 

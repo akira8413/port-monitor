@@ -18,6 +18,9 @@ Open http://localhost:9999 in your browser.
 - Process name, PID, git branch, and working directory detection
 - One-click process kill
 - Add/remove ports from the dashboard
+- Dynamic favicon (green/amber/red) shows port health at a glance
+- Tab title shows active port count: `(3/6) Port Monitor`
+- `--open` to auto-launch browser on start
 - Cross-platform (macOS, Linux, Windows)
 - Zero dependencies
 
@@ -52,6 +55,7 @@ Options:
   -p, --port      Dashboard port (default: 9999)
   -w, --watch     Ports to monitor (comma-separated)
   -r, --refresh   Refresh interval in ms (default: 3000)
+  -o, --open      Open dashboard in browser on start
   -h, --help      Show help
   -v, --version   Show version
 ```
